@@ -1,4 +1,4 @@
-# nuxt-app
+# nuxt-poll-app-demo
 
 ## Build Setup
 
