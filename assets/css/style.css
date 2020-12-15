@@ -1,0 +1,318 @@
+body,
+#__nuxt,
+#__layout {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 0.8rem;
+  font-family: "Hammersmith One", sans-serif;
+}
+body,
+#__nuxt,
+#__layout,
+html,
+.main-wrapper,
+.navbar-wrapper,
+.nuxt-component{
+  height: 100%;
+}
+
+main,
+.navbar.button.wrapper,
+.condition-title,
+.condition-component-outerdiv,
+.condition-component-div,
+.condition-component-static-top,
+.final-submit-buttons{
+  width: 100%;
+}
+
+.navbar-wrapper,
+.main-wrapper,
+.navbar,
+.top-menu,
+.searchbar,
+.profileinfo-wrap,
+.profileinfo-user-info,
+.navipanel,
+.survey-menu-holder,
+.condition-wrapper,
+.condition-component-outerdiv,
+.condition-component-div,
+.condition-component-static-top,
+.age-component-range,
+.age-component-form,
+.age-num,
+.final-submit-buttons{
+  display: flex;
+}
+
+.profileinfo-user-info,
+.navbar-wrapper,
+.navbar,
+.condition-wrapper,
+.condition-component-outerdiv,
+.condition-component-div{
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-wrapper {
+  min-width: 120px;
+  width: 10%;
+  border: lightgray solid 1px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px rgb(190, 190, 190);
+}
+
+.navbar.ulist {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navbar.button.icon,
+.navbar.button.wrapper {
+  padding: 10%;
+}
+
+.survey-menu-btn,
+.navbar.button.wrapper {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.navbar.button.wrapper:hover {
+  background-color: rgb(233, 232, 232);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+
+.navbar.button.link {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar.button.icon,
+.searchbar.magnifying-glass,
+.profileinfo-avatar {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.profileinfo-user-info,
+.navbar.social_media{
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar.inpt{
+  flex-grow: 1;
+  margin-left: 1vh;
+}
+
+.nuxt-component,
+.top-menu {
+  margin: 2%;
+}
+
+.searchbar.wrap,
+.nuxt-component,
+.top-menu,
+.age-component-range,
+.age-component-form,
+.final-submit-buttons{
+  justify-content: space-between;
+}
+
+.searchbar.wrap{
+  min-width: 10vh;
+  width: 80vh;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.searchbar.btn:focus,
+.searchbar.inpt:focus {
+  outline: none;
+}
+
+.searchbar.inpt,
+.searchbar.btn {
+  border-style: none;
+  background-color: transparent;
+}
+
+.profileinfo-avatar {
+  border-radius: 20px;
+}
+
+.profileinfo-position,
+.navipanel-item {
+  font-size: 0.82em;
+  color: gray;
+}
+
+.navipanel-img.arrow{
+  max-width: 25px;
+  max-height: 10px;
+}
+
+.navipanel-img.home{
+  max-width: 25px;
+  max-height: 20px;
+}
+
+.navipanel{
+  align-items: center;
+  margin: 1% ;
+}
+
+.navipanel-item{
+  margin: 0 5px 0 5px;
+}
+
+.navipanel-item.page{
+color:black
+}
+
+.survey-menu-holder{
+justify-content: stretch;
+margin: 5vh 70vh 0 5vh;
+}
+
+.survey-menu-btn{
+  color: rgb(0, 160, 0);
+  padding: 2%;
+}
+
+.survey-menu-btn:focus,
+.survey-menu-btn.active{
+  outline: none;
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(0, 160, 0);
+}
+
+.condition-wrapper{
+  box-shadow: 5px 0 15px lightgray;
+  border: 1px solid lightgray;
+  border-top: 1px solid lightgreen;
+  padding: 1%;
+  background-color: rgba(238, 229, 144, 0.226);
+}
+
+.condition-title{
+  color: gray;
+}
+
+.condition-component-selector{
+  width: 80%;
+  max-height: 3vh ;
+}
+
+.condition-component-title{
+  width: 20%;
+}
+
+.condition-component-div,
+.age-num,
+.condition-component-static-top{
+  align-items: center;
+}
+
+.condition-component-div input,
+.condition-component-div select{
+  outline: none;
+  border: lightgray solid 1px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px rgb(190, 190, 190);
+}
+
+.condition-component-div input:focus,
+.condition-component-div select:focus{
+  box-shadow: 1px 1px 15px  rgba(0, 160, 0, 0.5);
+
+}
+
+.condition-btn{
+  min-width: 130px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.remove-condition{
+  color: rgb(100, 0, 0);
+  border-color: rgb(100, 0, 0);
+  background-color: rgba(255, 0, 0, 0.055);
+}
+.remove-condition:hover,
+.remove-condition:hover{
+  color: rgb(120, 0, 0);
+  border-color:  rgb(120, 0, 0);
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.add-option{
+  color: green;
+  border-color:  rgb(88, 120, 0);
+  background-color: rgba(0, 160, 0, 0.5);
+}
+.add-option:hover{
+  color: green;
+  border-color:  green;
+  background-color: rgba(0, 160, 0, 0.3);
+}
+
+.or-div{
+  position: relative;
+  bottom: 10px ;
+}
+
+.age-num{
+align-items: center;
+}
+
+.age-component-range,
+.age-component-form{
+  margin: 1%;
+  align-self: baseline;
+  flex-wrap: wrap;
+}
+
+.age-component-form div,
+.final-submit-buttons,
+.add-condition,
+.type-component-select{
+  margin: 1%;
+}
+
+.add-condition{
+  padding:5%;
+  border-color: lightgray;
+  color:green;
+  font-weight: bold;
+}
+
+.final-submit-buttons button{
+  min-height: 50px;
+  border: none;
+  outline: none;
+}
+
+.final-submit-buttons button:active{
+outline: auto;
+border-radius: 8px;
+border: 1px solid;
+}
+.submit-button{
+  color: white;
+  background-color: green;
+}
+
+.test-button{
+  color: rgb(80, 200, 80);
+  background-color: white;
+}
